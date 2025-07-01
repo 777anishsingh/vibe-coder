@@ -1,12 +1,12 @@
 import { Button } from '@/components/ui/button';
 import React from 'react'
 
-export const Page = () => {
+export const Page = async () => {
+
+
   return (
     <div>
-      <Button variant={'new'}>
-        Click Me
-      </Button>
+      <Button variant={'outline'}>Hello World</Button>
     </div>
   )
 }
