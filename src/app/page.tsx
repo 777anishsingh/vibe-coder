@@ -1,13 +1,14 @@
-import { Button } from '@/components/ui/button';
-import React from 'react'
+import { caller } from "@/trpc/server";
 
-export const Page = async () => {
+const Page = async () => {
 
+  const data = await caller.hello({ text: 'Butola' });
 
   return (
     <div>
-      <Button variant={'outline'}>Hello World</Button>
+      {JSON.stringify(data)}
     </div>
   )
 }
+
 export default Page;
